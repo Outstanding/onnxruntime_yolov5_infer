@@ -7,6 +7,9 @@
    cd yolov5
    pip install -r requirements.txt
    pip install coremltools > =4.1 onnx > =1.9.0 scikit-learn==0.19.2
+   
+   if use gpu
+   # pip install onnxruntime-gpu
    ```
 
 2. To export onnx with 640x640, the batch size must be 1,if --train is not added, there will be many redundant layers
