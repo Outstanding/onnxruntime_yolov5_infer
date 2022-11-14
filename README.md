@@ -15,7 +15,7 @@
 2. To export onnx with 640x640, the batch size must be 1,if --train is not added, there will be many redundant layers
 
    ```
-   python export.py --weights yolov5s.pt --img 640 --batch 1 --train   
+   python export.py --weights yolov5m.pt --include torchscript onnx   
    ```
 
 3. Onnx simplifer simplified model
